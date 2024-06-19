@@ -5,6 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samyog Adhikari's Website</title>
     <meta name="description" content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_TRACKING_ID');
+    </script>
+
+    <!-- AddThis Social Media Sharing Buttons -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=your-addthis-id"></script>
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Samyog Adhikari's Website" />
+    <meta property="og:description" content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information." />
+    <meta property="og:image" content="https://via.placeholder.com/1200x400" />
+    <meta property="og:url" content="http://www.example.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Samyog Adhikari",
+      "url": "http://www.example.com",
+      "sameAs": [
+        "http://www.linkedin.com/in/samyog-adhikari-53a221303"
+      ],
+      "jobTitle": "Student",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Nepal"
+      }
+    }
+    </script>
+
     <style>
         body {
             font-family: Montserrat;
@@ -63,6 +102,24 @@
             padding: 10px 0;
             margin-top: 20px;
         }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+            header {
+                text-align: center;
+            }
+            header ul {
+                display: block;
+                text-align: center;
+            }
+            header li {
+                display: block;
+                padding: 10px 0;
+            }
+        }
     </style>
     <script>
         document.addEventListener('contextmenu', function(e) {
@@ -110,7 +167,7 @@
         <div class="container">
             <h2>Contact Information</h2>
             <p><a href="mailto:adhikarisamyog67@gmail.com">Email</a></p>
-            <p><a href="https://www.linkedin.com/in/samyog-adhikari-53a221303" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.linkedin.com/in/samyog-adhikari-53a221303" target="_blank" rel="noopener">LinkedIn</a></p>
         </div>
     </section>
 
