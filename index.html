@@ -1,178 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samyog Adhikari's Website</title>
-    <meta name="description" content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information.">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
+    <meta
+      name="description"
+      content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information."
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'YOUR_TRACKING_ID');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "YOUR_TRACKING_ID");
     </script>
 
     <!-- AddThis Social Media Sharing Buttons -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=your-addthis-id"></script>
-    
+    <script
+      type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=your-addthis-id"
+    ></script>
+
     <!-- Social Media Meta Tags -->
     <meta property="og:title" content="Samyog Adhikari's Website" />
-    <meta property="og:description" content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information." />
+    <meta
+      property="og:description"
+      content="Welcome to the personal website of Samyog Adhikari. Discover my projects, learn about my background, and find my contact information."
+    />
     <meta property="og:image" content="https://via.placeholder.com/1200x400" />
     <meta property="og:url" content="http://www.example.com" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Samyog Adhikari",
-      "url": "http://www.example.com",
-      "sameAs": [
-        "http://www.linkedin.com/in/samyog-adhikari-53a221303"
-      ],
-      "jobTitle": "Student",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Nepal"
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Samyog Adhikari",
+        "url": "http://www.example.com",
+        "sameAs": ["http://www.linkedin.com/in/samyog-adhikari-53a221303"],
+        "jobTitle": "Student",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Nepal"
+        }
       }
-    }
     </script>
 
     <style>
-        body {
-            font-family: Montserrat;
-            background-color: white;
-            color: black;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Montserrat;
+        background-color: white;
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #aec6cf;
+        color: black;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: black 3px solid;
+      }
+      header a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      header ul {
+        padding: 0;
+        list-style: none;
+      }
+      header li {
+        display: inline;
+        padding: 0 20px 0 20px;
+      }
+      .showcase {
+        min-height: 400px;
+        background: url("https://via.placeholder.com/1200x400") no-repeat 0 -400px;
+        text-align: center;
+        color: black;
+      }
+      .showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+      }
+      .showcase p {
+        font-size: 20px;
+      }
+      .content-section {
+        padding: 20px 0;
+      }
+      footer {
+        background: #aec6cf;
+        color: black;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      @media (max-width: 768px) {
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+          width: 100%;
+          padding: 0 10px;
         }
         header {
-            background: #AEC6CF;
-            color: black;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: black 3px solid;
-        }
-        header a {
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
+          text-align: center;
         }
         header ul {
-            padding: 0;
-            list-style: none;
+          display: block;
+          text-align: center;
         }
         header li {
-            display: inline;
-            padding: 0 20px 0 20px;
+          display: block;
+          padding: 10px 0;
         }
-        .showcase {
-            min-height: 400px;
-            background: url('https://via.placeholder.com/1200x400') no-repeat 0 -400px;
-            text-align: center;
-            color: black;
-        }
-        .showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        .showcase p {
-            font-size: 20px;
-        }
-        .content-section {
-            padding: 20px 0;
-        }
-        footer {
-            background: #AEC6CF;
-            color: black;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 100%;
-                padding: 0 10px;
-            }
-            header {
-                text-align: center;
-            }
-            header ul {
-                display: block;
-                text-align: center;
-            }
-            header li {
-                display: block;
-                padding: 10px 0;
-            }
-        }
+      }
     </style>
     <script>
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Samyog Adhikari</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="container">
+        <div id="branding">
+          <h1>Samyog Adhikari</h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="showcase">
-        <div class="container">
-            <h1>Welcome to My Personal Page</h1>
-        </div>
+      <div class="container">
+        <h1>Welcome to My Personal Page</h1>
+      </div>
     </section>
 
     <section id="about" class="content-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Samyog Adhikari, a student from Nepal with a passion for technology. I am excited to soon embark on new academic and professional adventures.</p>
-        </div>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Samyog Adhikari, a student from Nepal with a passion for
+          technology. I am excited to soon embark on new academic and
+          professional adventures.
+        </p>
+      </div>
     </section>
 
     <section id="projects" class="content-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>Coming Soon! Stay tuned for updates on my latest coding projects.</p>
-        </div>
+      <div class="container">
+        <h2>Projects</h2>
+        <p>Coming Soon! Stay tuned for updates on my latest coding projects.</p>
+      </div>
     </section>
 
     <section id="contact" class="content-section">
-        <div class="container">
-            <h2>Contact Information</h2>
-            <p><a href="mailto:adhikarisamyog67@gmail.com">Email</a></p>
-            <p><a href="https://www.linkedin.com/in/samyog-adhikari-53a221303" target="_blank" rel="noopener">LinkedIn</a></p>
-        </div>
+      <div class="container">
+        <h2>Contact Information</h2>
+        <p><a href="mailto:adhikarisamyog67@gmail.com">Email</a></p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/samyog-adhikari-53a221303"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </p>
+      </div>
     </section>
 
     <footer>
-        <p>Samyog Adhikari © 2024</p>
+      <p>Samyog Adhikari © 2024</p>
     </footer>
-</body>
+  </body>
 </html>
